@@ -6,4 +6,6 @@ means <- function() {
   print(septalMean)
   someMeans <-apply(iris[, 1:4], 2, mean)
   print(someMeans)
+  someMeansAlso <- colMeans(iris[, 1:4])
+  print(someMeansAlso)
 }
