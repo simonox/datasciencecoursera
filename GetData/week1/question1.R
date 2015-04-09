@@ -7,4 +7,9 @@ if (!file.exists(fileName)) {
   print("file already there")
 }
 data <- read.csv(fileName)
-print(data)
+# print(head(data))
+
+expensiveHouses <- length(data$VAL[!is.na(data$VAL) & data$VAL==24])
+print(expensiveHouses)
+
+# I think FES violates "Tidy data has one observation per row." 
