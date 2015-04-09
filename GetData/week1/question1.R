@@ -12,4 +12,3 @@ data <- read.csv(fileName)
 expensiveHouses <- length(data$VAL[!is.na(data$VAL) & data$VAL==24])
 print(expensiveHouses)
 
-# I think FES violates "Tidy data has one observation per row." 
